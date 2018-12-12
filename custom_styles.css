@@ -2441,13 +2441,17 @@
   bottom: 1em;
   border-color: #CCC;
   height: auto;
-  width: 30em;
+  width: 27em;
   visibility: hidden; }
   .chat__main:focus {
     visibility: visible;
     display: block; }
   .chat__main .close__button {
     font-size: 2em; }
+  .chat__main .chat__section__button {
+    background-color: #b8c2cc; }
+    .chat__main .chat__section__button:hover {
+      background-color: #f1f5f8; }
   .chat__main .image__size {
     width: auto;
     height: 40px; }
@@ -2478,7 +2482,9 @@
     transform: translate3d(0, 0, 0); } }
 .doNothing, .chat__main:focus {
   -webkit-animation-name: doNothing;
-  animation-name: doNothing; }
+  animation-name: doNothing;
+  animation-duration: 3000s;
+  -webkit-animation-duration: 3000s; }
 
 .chat__button {
   cursor: pointer;
@@ -2495,7 +2501,8 @@
   .chat__button:focus {
     animation-delay: 0.8s;
     -webkit-animation-delay: 0.8s;
-    animation-duration: 0.2s; }
+    animation-duration: 0.2s;
+    -webkit-animation-duration: 0.2s; }
     .chat__button:focus ~ .chat__main {
       visibility: visible;
       display: block; }
