@@ -1,9 +1,8 @@
 .chat__main	
 	@extend .animated
-	// @extend .fadeOutDown
 
-	animation-delay: 0.5s
-	-webkit-animation-delay: 0.5s
+	animation-delay: 1s
+	-webkit-animation-delay: 1s
 	
 	animation-duration: 1s	
 	-webkit-animation-duration: 1s
@@ -19,14 +18,11 @@
 	width: 30em
 
 	visibility: hidden	
-	
 	//&:focus-within
 	
 	&:focus
-		box-shadow: 0
 		visibility: visible
 		display: block
-
 		@extend .animated
 		@extend .doNothing 	
 

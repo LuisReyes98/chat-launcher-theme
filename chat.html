@@ -1,15 +1,15 @@
 <div>	
-	<span id="show-chat" class=" delay-1s chat__button mr-auto text-white link__main font-bold bg-blue py-2 px-4 hover:bg-blue-dark hover:text-gray shadow-lg text-2xl" tabindex="1"> 
+	<button id="show-chat" class="chat__button mr-auto text-white link__main font-bold bg-blue py-2 px-4 hover:bg-blue-dark hover:text-gray shadow-lg text-2xl fadeInUp" tabindex="1" onclick="document.getElementById('chat-main').classList.toggle('fadeOutDown');document.getElementById('show-chat').classList.toggle('fadeOutDown');"> 
 		<i class="mdi mdi-message-text-outline"></i>
-	</span>
-	<div id="chat-main" class="text-sm chat__main overflow-hidden rounded align-middle bg-white shadow-lg" chatwindow="true" tabindex="1">
+	</button>
+	<div id="chat-main" class="text-sm chat__main overflow-hidden rounded align-middle bg-white shadow-lg fadeOutDown" chatwindow="true" tabindex="1">
 		<div id="chat-header" class="chat__header w-full flex flex-wrap px-3 py-3">
 			<div class="justify-between flex flex-row w-full">
-				<i class="mdi mdi-message-text-outline"></i>
-				<div id="hide-chat" class="close__button font-bold hover:text-grey" >
+				<i class="mdi mdi-message-text-outline text-2xl"></i>
+				<button id="close-chat" class="close__button font-bold hover:text-grey " onclick="document.getElementById('chat-main').classList.toggle('fadeOutDown');document.getElementById('show-chat').classList.toggle('fadeOutDown');" >
 					<i class="mdi mdi-close" tabindex="1" ></i>			
-				</div>
-				
+				</button>
+				<!-- document.getElementById('show-chat').classList.toggle('fadeInUp'); -->
 			</div>
 			<div class="justify-between flex flex-row w-full">
 				<img src="https://avatars0.githubusercontent.com/u/43634206?s=200&v=4" alt="found_patterns_studio" class="image__size">
