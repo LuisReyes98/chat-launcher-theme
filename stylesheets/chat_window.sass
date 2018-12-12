@@ -1,9 +1,7 @@
 .chat__main	
 	@extend .animated
-
 	animation-delay: 1s
 	-webkit-animation-delay: 1s
-	
 	animation-duration: 1s	
 	-webkit-animation-duration: 1s
 	border-width: 1
@@ -16,9 +14,7 @@
 	border-color: #CCC
 	height: auto
 	width: 30em
-
 	visibility: hidden	
-	//&:focus-within
 	
 	&:focus
 		visibility: visible
@@ -26,17 +22,10 @@
 		@extend .animated
 		@extend .doNothing 	
 
-	.chat__header
-		background-color: #80FF9C
-
 	.close__button
 		font-size: 2em
 		
-	.chat__message		
-		border-width: 0px 0px 1px 0px		
-		border-bottom-color: #000
-		height: auto
-		width: auto
+	.chat__message__1
 
 	.image__size
 		width: auto
@@ -50,8 +39,3 @@
 		overflow-y: scroll
 		height: 20em
 
-	.new__message
-		.line
-			border-width: 1px 0px 0px 0px
-			height: 50%
-			border-color: #CC0000			
