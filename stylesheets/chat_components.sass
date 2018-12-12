@@ -1,0 +1,20 @@
+.container__visible
+	@extend .animated
+	//@extend .fadeIn
+	//visibility: visible
+	transition: display 0.5s
+	-webkit-transition: display 0.5s
+	animation-delay: 1s
+	-webkit-animation-delay: 1s
+	display: block
+
+
+.container__hidden
+	@extend .animated
+	transition: display 0.5s
+	-webkit-transition: display 0.5s
+	//@extend .fadeOut
+	//visibility: hidden
+	animation-delay: 1s
+	-webkit-animation-delay: 1s
+	display: none

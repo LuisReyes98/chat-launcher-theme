@@ -25,7 +25,7 @@
 			<div class="w-full text-center">
 			</div>									
 		</div>
-		<div id="chat-content"class="chat__box flex flex-wrap block ">
+		<div id="chat-content-main"class="chat__box flex flex-wrap block container__visible fadeIn">
 			<div class=" w-full hover:bg-grey-light px-4 py-4 flex flex-row">
 				<img src="https://image.flaticon.com/icons/svg/189/189664.svg" class="image__size" alt="">
 				<div class="px-2 ">
@@ -59,13 +59,19 @@
 			</div>
 			
 		</div>
+		<div id="chat-content-sec"class="chat__box flex flex-wrap block container__hidden fadeOut">
+			<p> HOLA HOLA</p>
+		</div>	
+
 		<div id="chat-footer" class="w-full flex flex-row justify-center">
 
-			<button class="chat__section__button flex flex-row text-center px-2 py-2 justify-center flex-grow">
+			<button class="chat__section__button flex flex-row text-center px-2 py-2 justify-center flex-grow" onclick="">
 				<i class="mdi mdi-message-text-outline"></i>
 				<p class="px-2"> CHAT </p>				
 			</button>
-			<button class="chat__section__button flex flex-row justify-center px-2 py-2 flex-grow">
+			<button class="chat__section__button flex flex-row justify-center px-2 py-2 flex-grow"
+				onclick="document.getElementById('chat-content-main').classList.toggle('container__visible');document.getElementById('chat-content-main').classList.toggle('container__hidden');document.getElementById('chat-content-main').classList.toggle('fadeIn');document.getElementById('chat-content-main').classList.toggle('fadeOut');document.getElementById('chat-content-sec').classList.toggle('container__visible');document.getElementById('chat-content-sec').classList.toggle('container__hidden');document.getElementById('chat-content-sec').classList.toggle('fadeIn');document.getElementById('chat-content-sec').classList.toggle('fadeOut');" 
+			>
 				<i class="mdi mdi-comment-question-outline"></i>
 				<p class="px-2"> FAQ</p>
 				
