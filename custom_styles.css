@@ -2514,7 +2514,19 @@
     height: 30px; }
   .chat__main .chat__box {
     overflow-y: scroll;
-    height: 20em; }
+    height: 20em;
+    /* width */
+    /* Track */
+    /* Handle */
+    /* Handle on hover */ }
+    .chat__main .chat__box::-webkit-scrollbar {
+      width: 5px; }
+    .chat__main .chat__box::-webkit-scrollbar-track {
+      background: #FFF; }
+    .chat__main .chat__box::-webkit-scrollbar-thumb {
+      background: #DAE1E7; }
+    .chat__main .chat__box::-webkit-scrollbar-thumb:hover {
+      background: #B8C2CC; }
 
 .chat__button {
   cursor: pointer;
@@ -2540,15 +2552,22 @@
 .container__visible {
   transition: display 0.5s;
   -webkit-transition: display 0.5s;
-  animation-delay: 1s;
-  -webkit-animation-delay: 1s;
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
   display: block; }
 
 .container__hidden {
   transition: display 0.5s;
   -webkit-transition: display 0.5s;
-  animation-delay: 1s;
-  -webkit-animation-delay: 1s;
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
   display: none; }
+
+.chat__main .chat__main__boxes {
+  height: 7em; }
+.chat__main .chat__alt__boxes {
+  background-color: #f1f5f8;
+  width: 12em;
+  height: 12em; }
 
 /*# sourceMappingURL=custom_styles.css.map */

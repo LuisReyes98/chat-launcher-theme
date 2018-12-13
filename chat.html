@@ -25,8 +25,8 @@
 			<div class="w-full text-center">
 			</div>									
 		</div>
-		<div id="chat-content-main"class="chat__box flex flex-wrap block container__visible fadeIn">
-			<div class=" w-full hover:bg-grey-light px-4 py-4 flex flex-row">
+		<div id="chat-content-main"class="chat__box flex flex-wrap container__visible fadeIn">
+			<div class="chat__main__boxes w-full hover:bg-grey-light px-4 py-4 flex flex-row flex-shrink overflow-hidden">
 				<img src="https://image.flaticon.com/icons/svg/189/189664.svg" class="image__size" alt="">
 				<div class="px-2 ">
 					<h4 class="text-black">Page information</h4>
@@ -36,21 +36,21 @@
 					<p> Hello</p>
 				</div>
 			</div>
-			<div class=" w-full hover:bg-grey-light px-4 py-4 flex flex-row">
+			<div class="chat__main__boxes w-full hover:bg-grey-light px-4 py-4 flex flex-row flex-shrink overflow-hidden">
 				<img src="https://image.flaticon.com/icons/svg/126/126100.svg" class="image__size" alt="">
 				<div class="px-2 ">
 					<h4 class="text-black">Page information</h4>
 					<p class="text-grey-darkest">Hey there! Can I help you with anything?</p>
 				</div>
 			</div>
-			<div class=" w-full hover:bg-grey-light px-4 py-4 flex flex-row">
+			<div class="chat__main__boxes w-full hover:bg-grey-light px-4 py-4 flex flex-row flex-shrink overflow-hidden">
 				<img src="https://image.flaticon.com/icons/svg/1127/1127071.svg" class="image__size" alt="">
 				<div class="px-2 ">
 					<h4 class="text-black">Page information</h4>
 					<p class="text-grey-darkest">Hey there! Can I help you with anything?</p>
 				</div>
 			</div>
-			<div class=" w-full hover:bg-grey-light px-4 py-4 flex flex-row">
+			<div class="chat__main__boxes w-full hover:bg-grey-light px-4 py-4 flex flex-row flex-shrink overflow-hidden">
 				<img src="https://image.flaticon.com/icons/svg/138/138239.svg" class="image__size" alt="">
 				<div class="px-2 ">
 					<h4 class="text-black">Page information</h4>
@@ -59,18 +59,43 @@
 			</div>
 			
 		</div>
-		<div id="chat-content-sec"class="chat__box flex flex-wrap block container__hidden fadeOut">
-			<p> HOLA HOLA</p>
+		<div id="chat-content-sec" class="chat__box flex flex-wrap container__hidden fadeOut">
+			<div class="flex flex-row">
+				<div class="chat__alt__boxes px-2 py-2 mx-2 my-2 w-1/2 align-middle text-center">
+					<img src="https://image.flaticon.com/icons/svg/138/138239.svg" class="image__size" alt="">
+					<p>Some Info</p>
+				</div>
+				<div class="chat__alt__boxes px-2 py-2 mx-2 my-2 w-1/2 align-middle text-center">
+					<img src="https://image.flaticon.com/icons/svg/138/138239.svg" class="image__size" alt="">
+					<p>Some Info</p>
+				</div>
+				
+			</div>
+			<div class="flex flex-row">
+				<div class="chat__alt__boxes px-2 py-2 mx-2 my-2 w-1/2 align-middle text-center">
+					<img src="https://image.flaticon.com/icons/svg/138/138239.svg" class="image__size" alt="">
+					<p>Some Info</p>
+				</div>
+				<div class="chat__alt__boxes px-2 py-2 mx-2 my-2 w-1/2 align-middle text-center">
+					<img src="https://image.flaticon.com/icons/svg/138/138239.svg" class="image__size" alt="">
+					<p>Some Info</p>
+				</div>
+				
+			</div>
+			<div class="chat__alt__boxes px-2 py-2 mx-2 my-2 w-1/2 align-middle text-center">
+				<img src="https://image.flaticon.com/icons/svg/138/138239.svg" class="image__size" alt="">
+				<p>Some Info</p>
+			</div>
 		</div>	
 
 		<div id="chat-footer" class="w-full flex flex-row justify-center">
 
-			<button class="chat__section__button flex flex-row text-center px-2 py-2 justify-center flex-grow" onclick="">
+			<button class="chat__section__button flex flex-row text-center px-2 py-2 justify-center flex-grow" onclick="document.getElementById('chat-content-main').classList.add('container__visible');document.getElementById('chat-content-main').classList.remove('container__hidden');document.getElementById('chat-content-main').classList.add('fadeIn');document.getElementById('chat-content-main').classList.remove('fadeOut');document.getElementById('chat-content-sec').classList.remove('container__visible');document.getElementById('chat-content-sec').classList.add('container__hidden');document.getElementById('chat-content-sec').classList.remove('fadeIn');document.getElementById('chat-content-sec').classList.add('fadeOut');" >
 				<i class="mdi mdi-message-text-outline"></i>
 				<p class="px-2"> CHAT </p>				
 			</button>
 			<button class="chat__section__button flex flex-row justify-center px-2 py-2 flex-grow"
-				onclick="document.getElementById('chat-content-main').classList.toggle('container__visible');document.getElementById('chat-content-main').classList.toggle('container__hidden');document.getElementById('chat-content-main').classList.toggle('fadeIn');document.getElementById('chat-content-main').classList.toggle('fadeOut');document.getElementById('chat-content-sec').classList.toggle('container__visible');document.getElementById('chat-content-sec').classList.toggle('container__hidden');document.getElementById('chat-content-sec').classList.toggle('fadeIn');document.getElementById('chat-content-sec').classList.toggle('fadeOut');" 
+				onclick="document.getElementById('chat-content-main').classList.remove('container__visible');document.getElementById('chat-content-main').classList.add('container__hidden');document.getElementById('chat-content-main').classList.remove('fadeIn');document.getElementById('chat-content-main').classList.add('fadeOut');document.getElementById('chat-content-sec').classList.add('container__visible');document.getElementById('chat-content-sec').classList.remove('container__hidden');document.getElementById('chat-content-sec').classList.add('fadeIn');document.getElementById('chat-content-sec').classList.remove('fadeOut');" 
 			>
 				<i class="mdi mdi-comment-question-outline"></i>
 				<p class="px-2"> FAQ</p>

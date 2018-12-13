@@ -2,6 +2,7 @@
 	@extend .animated
 	animation-delay: 1s
 	-webkit-animation-delay: 1s
+
 	animation-duration: 1s	
 	-webkit-animation-duration: 1s
 	border-width: 1
@@ -41,4 +42,20 @@
 	.chat__box
 		overflow-y: scroll
 		height: 20em
+		//Scrollbar options
+		/* width */
+		&::-webkit-scrollbar
+			width: 5px
+		/* Track */
+		&::-webkit-scrollbar-track
+			background: #FFF 
+		/* Handle */
+		&::-webkit-scrollbar-thumb
+			background: #DAE1E7
 
+		/* Handle on hover */
+		&::-webkit-scrollbar-thumb:hover 
+			background: #B8C2CC
+		
+
+	
