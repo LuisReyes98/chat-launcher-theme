@@ -1,12 +1,25 @@
 <div>	
-	<div class="aux__section" onclick="document.getElementById('chat-main').classList.toggle('fadeOutDown');document.getElementById('show-chat').classList.toggle('fadeOutDown');"> </div>			
-	<button id="show-chat" class="chat__button mr-auto text-white link__main font-bold bg-blue py-2 px-4 hover:bg-blue-dark hover:text-gray shadow-lg text-2xl fadeInUp" onclick="document.getElementById('chat-main').classList.toggle('fadeOutDown');document.getElementById('show-chat').classList.toggle('fadeOutDown');"> 
+	<div class="aux__section" onclick="
+	document.getElementById('chat-main').classList.toggle('fadeOutDown');
+	document.getElementById('show-chat').classList.toggle('fadeOutDown');"> </div>			
+	<button id="show-chat" class="chat__button mr-auto text-white link__main font-bold bg-blue py-2 px-4 hover:bg-blue-dark hover:text-gray shadow-lg text-2xl fadeInUp" onclick="
+	document.getElementById('chat-main').classList.toggle('fadeOutDown');
+	document.getElementById('show-chat').classList.toggle('fadeOutDown');"> 
 		<i class="mdi mdi-message-text-outline"></i>
 	</button>
 	<div id="chat-main" class="text-sm chat__main overflow-hidden rounded align-middle bg-white shadow-lg fadeOutDown" chatwindow="true" tabindex="1">
-		{% include 'chat-header.html' %}
+		
+		<div class="bg-grey-darkest">
+			{% include 'chat-header.html' %}
+			{% include 'chat-header-sec-1.html' %}
+			{% include 'chat-header-sec-2.html' %}			
+		</div>
 		{% include 'chat-content-1.html' %}
 		{% include 'chat-content-2.html' %}
+
+		{% include 'chat-section-1.html' %}
+		{% include 'chat-section-2.html' %}
+
 		{% include 'chat-footer.html' %}
 							
 	</div>

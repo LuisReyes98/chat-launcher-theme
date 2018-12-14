@@ -33,6 +33,18 @@
   margin-left: 25%;
   margin-right: 25%; }
 
+.image__size {
+  width: auto;
+  height: 40px; }
+
+.image__size__md {
+  width: auto;
+  height: 60px; }
+
+.image__size__user {
+  width: auto;
+  height: 30px; }
+
 /*!
  * animate.css -http://daneden.me/animate
  * Version - 3.7.0
@@ -2511,15 +2523,6 @@
     background-color: #b8c2cc; }
     .chat__main .chat__section__button:hover {
       background-color: #f1f5f8; }
-  .chat__main .image__size {
-    width: auto;
-    height: 40px; }
-  .chat__main .image__size__md {
-    width: auto;
-    height: 60px; }
-  .chat__main .user__image__size {
-    width: auto;
-    height: 30px; }
   .chat__main .chat__box {
     overflow-y: scroll;
     height: 20em;
@@ -2574,15 +2577,19 @@
 .container__visible {
   transition: display 0.5s;
   -webkit-transition: display 0.5s;
-  animation-delay: 0.5s;
-  -webkit-animation-delay: 0.5s;
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
   display: block; }
 
 .container__hidden {
   transition: display 0.5s;
   -webkit-transition: display 0.5s;
-  animation-delay: 0.5s;
-  -webkit-animation-delay: 0.5s;
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
   display: none; }
 
 .chat__main .chat__main__boxes {

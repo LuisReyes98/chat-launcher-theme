@@ -1,7 +1,9 @@
-<div id="chat-header" class="bg-grey-darkest text-white w-full flex flex-wrap px-3 py-1">
+<div id="chat-header" class="bg-grey-darkest text-white w-full flex flex-wrap px-3 py-1 container__visible fadeIn">
 	<div class="justify-between flex flex-row w-full">
 		<i class="mdi mdi-message-text text-2xl"></i>
-		<button id="close-chat" class="close__button font-bold hover:text-grey " onclick="document.getElementById('chat-main').classList.toggle('fadeOutDown');document.getElementById('show-chat').classList.toggle('fadeOutDown');" >
+		<button id="close-chat" class="close__button font-bold hover:text-grey " onclick="
+		document.getElementById('chat-main').classList.toggle('fadeOutDown');
+		document.getElementById('show-chat').classList.toggle('fadeOutDown');" >
 			<i class="mdi mdi-close" tabindex="1" ></i>			
 		</button>
 	</div>

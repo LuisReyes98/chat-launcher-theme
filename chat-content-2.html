@@ -1,7 +1,32 @@
 <div id="chat-content-sec" class="chat__box flex flex-wrap container__hidden fadeOut">
-	<div class="flex flex-row">
+	
+	<!-- Row -->
+	<div class="flex flex-row"> 
 
-		<div class="chat__alt__boxes rounded-lg shadow hover:shadow-lg px-2 py-2 mx-2 my-2 w-1/2 align-middle text-center flex flex-wrap">
+		<!-- Elemet of the row -->
+		<div class="chat__alt__boxes rounded-lg shadow hover:shadow-lg px-2 py-2 mx-2 my-2 w-1/2 align-middle text-center flex flex-wrap" 
+			onclick="
+	document.getElementById('chat-content-sec').classList.remove('container__visible');
+	document.getElementById('chat-content-sec').classList.add('container__hidden');
+	document.getElementById('chat-content-sec').classList.remove('fadeIn');
+	document.getElementById('chat-content-sec').classList.add('fadeOut');
+
+	document.getElementById('chat-section-2').classList.add('container__visible');
+	document.getElementById('chat-section-2').classList.remove('container__hidden');
+	document.getElementById('chat-section-2').classList.add('fadeIn');
+	document.getElementById('chat-section-2').classList.remove('fadeOut');
+
+	document.getElementById('chat-header').classList.remove('container__visible');
+	document.getElementById('chat-header').classList.add('container__hidden');
+	document.getElementById('chat-header').classList.remove('fadeIn');
+	document.getElementById('chat-header').classList.add('fadeOut');
+
+	document.getElementById('chat-header-sec-2').classList.add('container__visible');
+	document.getElementById('chat-header-sec-2').classList.remove('container__hidden');
+	document.getElementById('chat-header-sec-2').classList.add('fadeIn');
+	document.getElementById('chat-header-sec-2').classList.remove('fadeOut');
+	"
+		> 			
 			<div class=" w-full">
 				<img src="https://image.flaticon.com/icons/svg/138/138239.svg" class="image__size__md center__bottom alt_box_img" alt="">					
 			</div>
@@ -20,6 +45,7 @@
 		</div>	
 
 	</div>
+
 	<div class="flex flex-row">
 
 		<div class="chat__alt__boxes rounded-lg shadow hover:shadow-lg px-2 py-2 mx-2 my-2 w-1/2 align-middle text-center flex flex-wrap">
@@ -41,6 +67,8 @@
 		</div>	
 		
 	</div>
+
+
 	<div class="flex flex-row">
 
 		<div class="chat__alt__boxes rounded-lg shadow hover:shadow-lg px-2 py-2 mx-2 my-2 w-1/2 align-middle text-center flex flex-wrap">
@@ -50,6 +78,10 @@
 			<p class="w-full text-black">
 				Some Info
 			</p>
-		</div>					
-	</div>									
+		</div>		
+
+
+	</div>		
+
+
 </div>
