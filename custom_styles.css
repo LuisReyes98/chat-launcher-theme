@@ -28,6 +28,18 @@
   width: 100%;
   height: 8em; }
 
+.chat__button {
+  border-top-left-radius: 40%;
+  border-top-right-radius: 5%;
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 40%; }
+
+.chat__message {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; }
+
 .center__bottom {
   margin-top: 25%;
   margin-left: 25%;
@@ -946,7 +958,7 @@
     opacity: 0; }
   to {
     opacity: 1; } }
-.fadeIn {
+.fadeIn, #chat-content-main, #show-chat-content:checked ~ #chat-main #chat-content-2, #show-chat-section-1:checked ~ #chat-main #chat__header_bg #chat-header-sec-1, #show-chat-section-1:checked ~ #chat-main #chat-section-1, #show-chat-section-2:checked ~ #chat-main #chat__header_bg #chat-header-sec-2, #show-chat-section-2:checked ~ #chat-main #chat-section-2 {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn; }
 
@@ -1100,7 +1112,7 @@
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); } }
-.fadeInUp, .chat__button:focus + .chat__main {
+.fadeInUp, .chat__button, #show-hide-chat:checked ~ #chat-main {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp; }
 
@@ -1136,7 +1148,7 @@
     opacity: 1; }
   to {
     opacity: 0; } }
-.fadeOut {
+.fadeOut, #chat-content-2, #show-chat-content:checked ~ #chat-main #chat-content-main, #show-chat-section-1:checked ~ #chat-main #chat__header_bg #chat-header, #show-chat-section-1:checked ~ #chat-main #chat-content-2, #show-chat-section-1:checked ~ #chat-main #chat-content-main, #show-chat-section-2:checked ~ #chat-main #chat__header_bg #chat-header, #show-chat-section-2:checked ~ #chat-main #chat-content-main, #show-chat-section-2:checked ~ #chat-main #chat-content-2 {
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut; }
 
@@ -1154,7 +1166,7 @@
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0); } }
-.fadeOutDown {
+.fadeOutDown, .chat__main, #show-hide-chat:checked ~ #show-chat {
   -webkit-animation-name: fadeOutDown;
   animation-name: fadeOutDown; }
 
@@ -1336,7 +1348,7 @@
     transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; } }
-.animated.flip, .flip.chat__main, .flip.chat__button, .chat__button:focus + .flip.chat__main, .flip.container__visible, .flip.container__hidden, .chat__main .chat__alt__boxes:hover .flip.alt_box_img {
+.animated.flip, .flip.chat__main, .flip.chat__button, .flip.container__visible, .flip#chat-content-main, #show-chat-content:checked ~ #chat-main .flip#chat-content-2, #show-chat-section-1:checked ~ #chat-main #chat__header_bg .flip#chat-header-sec-1, #show-chat-section-1:checked ~ #chat-main .flip#chat-section-1, #show-chat-section-2:checked ~ #chat-main #chat__header_bg .flip#chat-header-sec-2, #show-chat-section-2:checked ~ #chat-main .flip#chat-section-2, .flip.container__hidden, .flip#chat-content-2, #show-chat-content:checked ~ #chat-main .flip#chat-content-main, #show-chat-section-1:checked ~ #chat-main #chat__header_bg .flip#chat-header, #show-chat-section-1:checked ~ #chat-main .flip#chat-content-2, #show-chat-section-1:checked ~ #chat-main .flip#chat-content-main, #show-chat-section-2:checked ~ #chat-main #chat__header_bg .flip#chat-header, #show-chat-section-2:checked ~ #chat-main .flip#chat-content-main, #show-chat-section-2:checked ~ #chat-main .flip#chat-content-2, .chat__main .chat__alt__boxes:hover .flip.alt_box_img, #show-hide-chat:checked ~ .flip#show-chat, #show-hide-chat:checked ~ .flip#chat-main {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
   -webkit-animation-name: flip;
@@ -2422,54 +2434,54 @@
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
-.animated, .chat__main, .chat__main:focus, .chat__main:active, .chat__button, .chat__button:focus, .chat__button:focus + .chat__main, .container__visible, .container__hidden, .chat__main .chat__alt__boxes:hover .alt_box_img {
+.animated, .chat__main, .chat__button, .container__visible, #chat-content-main, #show-chat-content:checked ~ #chat-main #chat-content-2, #show-chat-section-1:checked ~ #chat-main #chat__header_bg #chat-header-sec-1, #show-chat-section-1:checked ~ #chat-main #chat-section-1, #show-chat-section-2:checked ~ #chat-main #chat__header_bg #chat-header-sec-2, #show-chat-section-2:checked ~ #chat-main #chat-section-2, .container__hidden, #chat-content-2, #show-chat-content:checked ~ #chat-main #chat-content-main, #show-chat-section-1:checked ~ #chat-main #chat__header_bg #chat-header, #show-chat-section-1:checked ~ #chat-main #chat-content-2, #show-chat-section-1:checked ~ #chat-main #chat-content-main, #show-chat-section-2:checked ~ #chat-main #chat__header_bg #chat-header, #show-chat-section-2:checked ~ #chat-main #chat-content-main, #show-chat-section-2:checked ~ #chat-main #chat-content-2, .chat__main .chat__alt__boxes:hover .alt_box_img, #show-hide-chat:checked ~ #show-chat, #show-hide-chat:checked ~ #chat-main {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both; }
 
-.animated.infinite, .infinite.chat__main, .infinite.chat__button, .chat__button:focus + .infinite.chat__main, .infinite.container__visible, .infinite.container__hidden, .chat__main .chat__alt__boxes:hover .infinite.alt_box_img {
+.animated.infinite, .infinite.chat__main, .infinite.chat__button, .infinite.container__visible, .infinite#chat-content-main, #show-chat-content:checked ~ #chat-main .infinite#chat-content-2, #show-chat-section-1:checked ~ #chat-main #chat__header_bg .infinite#chat-header-sec-1, #show-chat-section-1:checked ~ #chat-main .infinite#chat-section-1, #show-chat-section-2:checked ~ #chat-main #chat__header_bg .infinite#chat-header-sec-2, #show-chat-section-2:checked ~ #chat-main .infinite#chat-section-2, .infinite.container__hidden, .infinite#chat-content-2, #show-chat-content:checked ~ #chat-main .infinite#chat-content-main, #show-chat-section-1:checked ~ #chat-main #chat__header_bg .infinite#chat-header, #show-chat-section-1:checked ~ #chat-main .infinite#chat-content-2, #show-chat-section-1:checked ~ #chat-main .infinite#chat-content-main, #show-chat-section-2:checked ~ #chat-main #chat__header_bg .infinite#chat-header, #show-chat-section-2:checked ~ #chat-main .infinite#chat-content-main, #show-chat-section-2:checked ~ #chat-main .infinite#chat-content-2, .chat__main .chat__alt__boxes:hover .infinite.alt_box_img, #show-hide-chat:checked ~ .infinite#show-chat, #show-hide-chat:checked ~ .infinite#chat-main {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
 
-.animated.delay-1s, .delay-1s.chat__main, .delay-1s.chat__button, .chat__button:focus + .delay-1s.chat__main, .delay-1s.container__visible, .delay-1s.container__hidden, .chat__main .chat__alt__boxes:hover .delay-1s.alt_box_img {
+.animated.delay-1s, .delay-1s.chat__main, .delay-1s.chat__button, .delay-1s.container__visible, .delay-1s#chat-content-main, #show-chat-content:checked ~ #chat-main .delay-1s#chat-content-2, #show-chat-section-1:checked ~ #chat-main #chat__header_bg .delay-1s#chat-header-sec-1, #show-chat-section-1:checked ~ #chat-main .delay-1s#chat-section-1, #show-chat-section-2:checked ~ #chat-main #chat__header_bg .delay-1s#chat-header-sec-2, #show-chat-section-2:checked ~ #chat-main .delay-1s#chat-section-2, .delay-1s.container__hidden, .delay-1s#chat-content-2, #show-chat-content:checked ~ #chat-main .delay-1s#chat-content-main, #show-chat-section-1:checked ~ #chat-main #chat__header_bg .delay-1s#chat-header, #show-chat-section-1:checked ~ #chat-main .delay-1s#chat-content-2, #show-chat-section-1:checked ~ #chat-main .delay-1s#chat-content-main, #show-chat-section-2:checked ~ #chat-main #chat__header_bg .delay-1s#chat-header, #show-chat-section-2:checked ~ #chat-main .delay-1s#chat-content-main, #show-chat-section-2:checked ~ #chat-main .delay-1s#chat-content-2, .chat__main .chat__alt__boxes:hover .delay-1s.alt_box_img, #show-hide-chat:checked ~ .delay-1s#show-chat, #show-hide-chat:checked ~ .delay-1s#chat-main {
   -webkit-animation-delay: 1s;
   animation-delay: 1s; }
 
-.animated.delay-2s, .delay-2s.chat__main, .delay-2s.chat__button, .chat__button:focus + .delay-2s.chat__main, .delay-2s.container__visible, .delay-2s.container__hidden, .chat__main .chat__alt__boxes:hover .delay-2s.alt_box_img {
+.animated.delay-2s, .delay-2s.chat__main, .delay-2s.chat__button, .delay-2s.container__visible, .delay-2s#chat-content-main, #show-chat-content:checked ~ #chat-main .delay-2s#chat-content-2, #show-chat-section-1:checked ~ #chat-main #chat__header_bg .delay-2s#chat-header-sec-1, #show-chat-section-1:checked ~ #chat-main .delay-2s#chat-section-1, #show-chat-section-2:checked ~ #chat-main #chat__header_bg .delay-2s#chat-header-sec-2, #show-chat-section-2:checked ~ #chat-main .delay-2s#chat-section-2, .delay-2s.container__hidden, .delay-2s#chat-content-2, #show-chat-content:checked ~ #chat-main .delay-2s#chat-content-main, #show-chat-section-1:checked ~ #chat-main #chat__header_bg .delay-2s#chat-header, #show-chat-section-1:checked ~ #chat-main .delay-2s#chat-content-2, #show-chat-section-1:checked ~ #chat-main .delay-2s#chat-content-main, #show-chat-section-2:checked ~ #chat-main #chat__header_bg .delay-2s#chat-header, #show-chat-section-2:checked ~ #chat-main .delay-2s#chat-content-main, #show-chat-section-2:checked ~ #chat-main .delay-2s#chat-content-2, .chat__main .chat__alt__boxes:hover .delay-2s.alt_box_img, #show-hide-chat:checked ~ .delay-2s#show-chat, #show-hide-chat:checked ~ .delay-2s#chat-main {
   -webkit-animation-delay: 2s;
   animation-delay: 2s; }
 
-.animated.delay-3s, .delay-3s.chat__main, .delay-3s.chat__button, .chat__button:focus + .delay-3s.chat__main, .delay-3s.container__visible, .delay-3s.container__hidden, .chat__main .chat__alt__boxes:hover .delay-3s.alt_box_img {
+.animated.delay-3s, .delay-3s.chat__main, .delay-3s.chat__button, .delay-3s.container__visible, .delay-3s#chat-content-main, #show-chat-content:checked ~ #chat-main .delay-3s#chat-content-2, #show-chat-section-1:checked ~ #chat-main #chat__header_bg .delay-3s#chat-header-sec-1, #show-chat-section-1:checked ~ #chat-main .delay-3s#chat-section-1, #show-chat-section-2:checked ~ #chat-main #chat__header_bg .delay-3s#chat-header-sec-2, #show-chat-section-2:checked ~ #chat-main .delay-3s#chat-section-2, .delay-3s.container__hidden, .delay-3s#chat-content-2, #show-chat-content:checked ~ #chat-main .delay-3s#chat-content-main, #show-chat-section-1:checked ~ #chat-main #chat__header_bg .delay-3s#chat-header, #show-chat-section-1:checked ~ #chat-main .delay-3s#chat-content-2, #show-chat-section-1:checked ~ #chat-main .delay-3s#chat-content-main, #show-chat-section-2:checked ~ #chat-main #chat__header_bg .delay-3s#chat-header, #show-chat-section-2:checked ~ #chat-main .delay-3s#chat-content-main, #show-chat-section-2:checked ~ #chat-main .delay-3s#chat-content-2, .chat__main .chat__alt__boxes:hover .delay-3s.alt_box_img, #show-hide-chat:checked ~ .delay-3s#show-chat, #show-hide-chat:checked ~ .delay-3s#chat-main {
   -webkit-animation-delay: 3s;
   animation-delay: 3s; }
 
-.animated.delay-4s, .delay-4s.chat__main, .delay-4s.chat__button, .chat__button:focus + .delay-4s.chat__main, .delay-4s.container__visible, .delay-4s.container__hidden, .chat__main .chat__alt__boxes:hover .delay-4s.alt_box_img {
+.animated.delay-4s, .delay-4s.chat__main, .delay-4s.chat__button, .delay-4s.container__visible, .delay-4s#chat-content-main, #show-chat-content:checked ~ #chat-main .delay-4s#chat-content-2, #show-chat-section-1:checked ~ #chat-main #chat__header_bg .delay-4s#chat-header-sec-1, #show-chat-section-1:checked ~ #chat-main .delay-4s#chat-section-1, #show-chat-section-2:checked ~ #chat-main #chat__header_bg .delay-4s#chat-header-sec-2, #show-chat-section-2:checked ~ #chat-main .delay-4s#chat-section-2, .delay-4s.container__hidden, .delay-4s#chat-content-2, #show-chat-content:checked ~ #chat-main .delay-4s#chat-content-main, #show-chat-section-1:checked ~ #chat-main #chat__header_bg .delay-4s#chat-header, #show-chat-section-1:checked ~ #chat-main .delay-4s#chat-content-2, #show-chat-section-1:checked ~ #chat-main .delay-4s#chat-content-main, #show-chat-section-2:checked ~ #chat-main #chat__header_bg .delay-4s#chat-header, #show-chat-section-2:checked ~ #chat-main .delay-4s#chat-content-main, #show-chat-section-2:checked ~ #chat-main .delay-4s#chat-content-2, .chat__main .chat__alt__boxes:hover .delay-4s.alt_box_img, #show-hide-chat:checked ~ .delay-4s#show-chat, #show-hide-chat:checked ~ .delay-4s#chat-main {
   -webkit-animation-delay: 4s;
   animation-delay: 4s; }
 
-.animated.delay-5s, .delay-5s.chat__main, .delay-5s.chat__button, .chat__button:focus + .delay-5s.chat__main, .delay-5s.container__visible, .delay-5s.container__hidden, .chat__main .chat__alt__boxes:hover .delay-5s.alt_box_img {
+.animated.delay-5s, .delay-5s.chat__main, .delay-5s.chat__button, .delay-5s.container__visible, .delay-5s#chat-content-main, #show-chat-content:checked ~ #chat-main .delay-5s#chat-content-2, #show-chat-section-1:checked ~ #chat-main #chat__header_bg .delay-5s#chat-header-sec-1, #show-chat-section-1:checked ~ #chat-main .delay-5s#chat-section-1, #show-chat-section-2:checked ~ #chat-main #chat__header_bg .delay-5s#chat-header-sec-2, #show-chat-section-2:checked ~ #chat-main .delay-5s#chat-section-2, .delay-5s.container__hidden, .delay-5s#chat-content-2, #show-chat-content:checked ~ #chat-main .delay-5s#chat-content-main, #show-chat-section-1:checked ~ #chat-main #chat__header_bg .delay-5s#chat-header, #show-chat-section-1:checked ~ #chat-main .delay-5s#chat-content-2, #show-chat-section-1:checked ~ #chat-main .delay-5s#chat-content-main, #show-chat-section-2:checked ~ #chat-main #chat__header_bg .delay-5s#chat-header, #show-chat-section-2:checked ~ #chat-main .delay-5s#chat-content-main, #show-chat-section-2:checked ~ #chat-main .delay-5s#chat-content-2, .chat__main .chat__alt__boxes:hover .delay-5s.alt_box_img, #show-hide-chat:checked ~ .delay-5s#show-chat, #show-hide-chat:checked ~ .delay-5s#chat-main {
   -webkit-animation-delay: 5s;
   animation-delay: 5s; }
 
-.animated.fast, .fast.chat__main, .fast.chat__button, .chat__button:focus + .fast.chat__main, .fast.container__visible, .fast.container__hidden, .chat__main .chat__alt__boxes:hover .fast.alt_box_img {
+.animated.fast, .fast.chat__main, .fast.chat__button, .fast.container__visible, .fast#chat-content-main, #show-chat-content:checked ~ #chat-main .fast#chat-content-2, #show-chat-section-1:checked ~ #chat-main #chat__header_bg .fast#chat-header-sec-1, #show-chat-section-1:checked ~ #chat-main .fast#chat-section-1, #show-chat-section-2:checked ~ #chat-main #chat__header_bg .fast#chat-header-sec-2, #show-chat-section-2:checked ~ #chat-main .fast#chat-section-2, .fast.container__hidden, .fast#chat-content-2, #show-chat-content:checked ~ #chat-main .fast#chat-content-main, #show-chat-section-1:checked ~ #chat-main #chat__header_bg .fast#chat-header, #show-chat-section-1:checked ~ #chat-main .fast#chat-content-2, #show-chat-section-1:checked ~ #chat-main .fast#chat-content-main, #show-chat-section-2:checked ~ #chat-main #chat__header_bg .fast#chat-header, #show-chat-section-2:checked ~ #chat-main .fast#chat-content-main, #show-chat-section-2:checked ~ #chat-main .fast#chat-content-2, .chat__main .chat__alt__boxes:hover .fast.alt_box_img, #show-hide-chat:checked ~ .fast#show-chat, #show-hide-chat:checked ~ .fast#chat-main {
   -webkit-animation-duration: 800ms;
   animation-duration: 800ms; }
 
-.animated.faster, .faster.chat__main, .faster.chat__button, .chat__button:focus + .faster.chat__main, .faster.container__visible, .faster.container__hidden, .chat__main .chat__alt__boxes:hover .faster.alt_box_img {
+.animated.faster, .faster.chat__main, .faster.chat__button, .faster.container__visible, .faster#chat-content-main, #show-chat-content:checked ~ #chat-main .faster#chat-content-2, #show-chat-section-1:checked ~ #chat-main #chat__header_bg .faster#chat-header-sec-1, #show-chat-section-1:checked ~ #chat-main .faster#chat-section-1, #show-chat-section-2:checked ~ #chat-main #chat__header_bg .faster#chat-header-sec-2, #show-chat-section-2:checked ~ #chat-main .faster#chat-section-2, .faster.container__hidden, .faster#chat-content-2, #show-chat-content:checked ~ #chat-main .faster#chat-content-main, #show-chat-section-1:checked ~ #chat-main #chat__header_bg .faster#chat-header, #show-chat-section-1:checked ~ #chat-main .faster#chat-content-2, #show-chat-section-1:checked ~ #chat-main .faster#chat-content-main, #show-chat-section-2:checked ~ #chat-main #chat__header_bg .faster#chat-header, #show-chat-section-2:checked ~ #chat-main .faster#chat-content-main, #show-chat-section-2:checked ~ #chat-main .faster#chat-content-2, .chat__main .chat__alt__boxes:hover .faster.alt_box_img, #show-hide-chat:checked ~ .faster#show-chat, #show-hide-chat:checked ~ .faster#chat-main {
   -webkit-animation-duration: 500ms;
   animation-duration: 500ms; }
 
-.animated.slow, .slow.chat__main, .slow.chat__button, .chat__button:focus + .slow.chat__main, .slow.container__visible, .slow.container__hidden, .chat__main .chat__alt__boxes:hover .slow.alt_box_img {
+.animated.slow, .slow.chat__main, .slow.chat__button, .slow.container__visible, .slow#chat-content-main, #show-chat-content:checked ~ #chat-main .slow#chat-content-2, #show-chat-section-1:checked ~ #chat-main #chat__header_bg .slow#chat-header-sec-1, #show-chat-section-1:checked ~ #chat-main .slow#chat-section-1, #show-chat-section-2:checked ~ #chat-main #chat__header_bg .slow#chat-header-sec-2, #show-chat-section-2:checked ~ #chat-main .slow#chat-section-2, .slow.container__hidden, .slow#chat-content-2, #show-chat-content:checked ~ #chat-main .slow#chat-content-main, #show-chat-section-1:checked ~ #chat-main #chat__header_bg .slow#chat-header, #show-chat-section-1:checked ~ #chat-main .slow#chat-content-2, #show-chat-section-1:checked ~ #chat-main .slow#chat-content-main, #show-chat-section-2:checked ~ #chat-main #chat__header_bg .slow#chat-header, #show-chat-section-2:checked ~ #chat-main .slow#chat-content-main, #show-chat-section-2:checked ~ #chat-main .slow#chat-content-2, .chat__main .chat__alt__boxes:hover .slow.alt_box_img, #show-hide-chat:checked ~ .slow#show-chat, #show-hide-chat:checked ~ .slow#chat-main {
   -webkit-animation-duration: 2s;
   animation-duration: 2s; }
 
-.animated.slower, .slower.chat__main, .slower.chat__button, .chat__button:focus + .slower.chat__main, .slower.container__visible, .slower.container__hidden, .chat__main .chat__alt__boxes:hover .slower.alt_box_img {
+.animated.slower, .slower.chat__main, .slower.chat__button, .slower.container__visible, .slower#chat-content-main, #show-chat-content:checked ~ #chat-main .slower#chat-content-2, #show-chat-section-1:checked ~ #chat-main #chat__header_bg .slower#chat-header-sec-1, #show-chat-section-1:checked ~ #chat-main .slower#chat-section-1, #show-chat-section-2:checked ~ #chat-main #chat__header_bg .slower#chat-header-sec-2, #show-chat-section-2:checked ~ #chat-main .slower#chat-section-2, .slower.container__hidden, .slower#chat-content-2, #show-chat-content:checked ~ #chat-main .slower#chat-content-main, #show-chat-section-1:checked ~ #chat-main #chat__header_bg .slower#chat-header, #show-chat-section-1:checked ~ #chat-main .slower#chat-content-2, #show-chat-section-1:checked ~ #chat-main .slower#chat-content-main, #show-chat-section-2:checked ~ #chat-main #chat__header_bg .slower#chat-header, #show-chat-section-2:checked ~ #chat-main .slower#chat-content-main, #show-chat-section-2:checked ~ #chat-main .slower#chat-content-2, .chat__main .chat__alt__boxes:hover .slower.alt_box_img, #show-hide-chat:checked ~ .slower#show-chat, #show-hide-chat:checked ~ .slower#chat-main {
   -webkit-animation-duration: 3s;
   animation-duration: 3s; }
 
 @media (prefers-reduced-motion) {
-  .animated, .chat__main, .chat__main:focus, .chat__main:active, .chat__button, .chat__button:focus, .chat__button:focus + .chat__main, .container__visible, .container__hidden, .chat__main .chat__alt__boxes:hover .alt_box_img {
+  .animated, .chat__main, .chat__button, .container__visible, #chat-content-main, #show-chat-content:checked ~ #chat-main #chat-content-2, #show-chat-section-1:checked ~ #chat-main #chat__header_bg #chat-header-sec-1, #show-chat-section-1:checked ~ #chat-main #chat-section-1, #show-chat-section-2:checked ~ #chat-main #chat__header_bg #chat-header-sec-2, #show-chat-section-2:checked ~ #chat-main #chat-section-2, .container__hidden, #chat-content-2, #show-chat-content:checked ~ #chat-main #chat-content-main, #show-chat-section-1:checked ~ #chat-main #chat__header_bg #chat-header, #show-chat-section-1:checked ~ #chat-main #chat-content-2, #show-chat-section-1:checked ~ #chat-main #chat-content-main, #show-chat-section-2:checked ~ #chat-main #chat__header_bg #chat-header, #show-chat-section-2:checked ~ #chat-main #chat-content-main, #show-chat-section-2:checked ~ #chat-main #chat-content-2, .chat__main .chat__alt__boxes:hover .alt_box_img, #show-hide-chat:checked ~ #show-chat, #show-hide-chat:checked ~ #chat-main {
     -webkit-animation: unset !important;
     animation: unset !important;
     -webkit-transition: none !important;
@@ -2492,7 +2504,7 @@
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); } }
-.doNothing, .chat__main:focus, .chat__main:active {
+.doNothing {
   -webkit-animation-name: doNothing;
   animation-name: doNothing;
   animation-duration: 3000s;
@@ -2514,9 +2526,6 @@
   height: auto;
   width: 27em;
   visibility: hidden; }
-  .chat__main:focus, .chat__main:active {
-    visibility: visible;
-    display: block; }
   .chat__main .close__button {
     font-size: 2em; }
   .chat__main .chat__section__button {
@@ -2560,21 +2569,9 @@
   z-index: 2;
   transition: visibility 1.5s linear;
   animation-delay: 1.2s;
-  -webkit-animation-delay: 1.2s;
-  border-top-left-radius: 40%;
-  border-top-right-radius: 5%;
-  border-bottom-left-radius: 40%;
-  border-bottom-right-radius: 40%; }
-  .chat__button:focus {
-    animation-delay: 0.8s;
-    -webkit-animation-delay: 0.8s;
-    animation-duration: 0.2s;
-    -webkit-animation-duration: 0.2s; }
-    .chat__button:focus + .chat__main {
-      visibility: visible;
-      display: block; }
+  -webkit-animation-delay: 1.2s; }
 
-.container__visible {
+.container__visible, #chat-content-main, #show-chat-content:checked ~ #chat-main #chat-content-2, #show-chat-section-1:checked ~ #chat-main #chat__header_bg #chat-header-sec-1, #show-chat-section-1:checked ~ #chat-main #chat-section-1, #show-chat-section-2:checked ~ #chat-main #chat__header_bg #chat-header-sec-2, #show-chat-section-2:checked ~ #chat-main #chat-section-2 {
   transition: display 0.5s;
   -webkit-transition: display 0.5s;
   animation-delay: 0s;
@@ -2583,7 +2580,7 @@
   -webkit-animation-duration: 0.5s;
   display: block; }
 
-.container__hidden {
+.container__hidden, #chat-content-2, #show-chat-content:checked ~ #chat-main #chat-content-main, #show-chat-section-1:checked ~ #chat-main #chat__header_bg #chat-header, #show-chat-section-1:checked ~ #chat-main #chat-content-2, #show-chat-section-1:checked ~ #chat-main #chat-content-main, #show-chat-section-2:checked ~ #chat-main #chat__header_bg #chat-header, #show-chat-section-2:checked ~ #chat-main #chat-content-main, #show-chat-section-2:checked ~ #chat-main #chat-content-2 {
   transition: display 0.5s;
   -webkit-transition: display 0.5s;
   animation-delay: 0s;
@@ -2598,5 +2595,21 @@
   background-color: #f1f5f8;
   width: 12em;
   height: 12em; }
+
+.chat__message {
+  overflow: visible; }
+
+.input__hidden {
+  display: none;
+  visibility: hidden; }
+
+#show-hide-chat:checked ~ #show-chat {
+  animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
+  animation-duration: 0.2s;
+  -webkit-animation-duration: 0.2s; }
+#show-hide-chat:checked ~ #chat-main {
+  visibility: visible;
+  display: block; }
 
 /*# sourceMappingURL=custom_styles.css.map */

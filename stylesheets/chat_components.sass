@@ -19,6 +19,15 @@
 	-webkit-animation-duration: 0.5s
 	display: none
 
+#chat-content-main
+	@extend .container__visible
+	@extend .fadeIn
+
+#chat-content-2
+	@extend .container__hidden
+	@extend .fadeOut
+
+
 .chat__main
 	.chat__main__boxes
 		height: 7em
@@ -32,3 +41,8 @@
 			.alt_box_img
 				@extend .animated
 				@extend .pulse
+
+.chat__message
+	@extend %rounded-to-top-left-smooth
+	overflow: visible
+

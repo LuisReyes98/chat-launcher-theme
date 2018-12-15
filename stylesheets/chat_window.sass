@@ -1,5 +1,6 @@
 .chat__main	
 	@extend .animated
+	@extend .fadeOutDown
 	animation-delay: 1s
 	-webkit-animation-delay: 1s
 
@@ -16,12 +17,6 @@
 	height: auto
 	width: 27em
 	visibility: hidden	
-	
-	&:focus,&:active
-		visibility: visible
-		display: block
-		@extend .animated
-		@extend .doNothing 	
 
 	.close__button
 		font-size: 2em

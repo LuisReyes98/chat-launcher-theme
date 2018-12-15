@@ -1,0 +1,70 @@
+%element-hidden
+	@extend .container__hidden
+	@extend .fadeOut
+
+%element-visible
+	@extend .container__visible
+	@extend .fadeIn
+	
+.input__hidden
+	display: none
+	visibility: hidden
+
+#show-hide-chat
+	&:checked 
+		~ #show-chat
+			@extend .animated
+			@extend .fadeOutDown
+			animation-delay: 0.8s
+			-webkit-animation-delay: 0.8s
+			animation-duration: 0.2s
+			-webkit-animation-duration: 0.2s
+		
+		~ #chat-main
+			@extend .animated
+			@extend .fadeInUp
+			visibility: visible
+			display: block
+
+#show-chat-content
+	&:checked
+		~ #chat-main 
+
+			#chat-content-main	
+				@extend %element-hidden
+
+			#chat-content-2
+				@extend %element-visible
+
+#show-chat-section-1				
+	&:checked
+		~ #chat-main
+
+			#chat__header_bg
+				#chat-header
+					@extend %element-hidden
+				#chat-header-sec-1
+					@extend %element-visible
+
+			#chat-content-2 , #chat-content-main
+				@extend %element-hidden
+
+			#chat-section-1
+				@extend %element-visible
+
+#show-chat-section-2				
+	&:checked
+		~ #chat-main
+
+			#chat__header_bg
+				#chat-header
+					@extend %element-hidden
+
+				#chat-header-sec-2
+					@extend %element-visible
+
+			#chat-content-main , #chat-content-2
+				@extend %element-hidden
+			
+			#chat-section-2
+				@extend %element-visible
