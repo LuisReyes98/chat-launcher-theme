@@ -1,4 +1,5 @@
 <div>	
+	<!-- Each input for a transition -->
 	<input type="checkbox" id="show-hide-chat" class="input__hidden">
 
 	<input type="checkbox" id="show-chat-content" class="input__hidden">
@@ -7,24 +8,25 @@
 
 	<input type="checkbox" id="show-chat-section-2" class="input__hidden">
 
-	<label id="show-chat" for="show-hide-chat" class="chat__button mr-auto text-white link__main font-bold bg-blue py-2 px-4 hover:bg-blue-dark hover:text-gray shadow-lg text-2xl" > 
-	
-		<i class="mdi mdi-message-text-outline"></i>
-	</label>
+
+	{% include 'chunks/chat-show-button.html' %}
+
+
 	<div id="chat-main" class="text-sm chat__main overflow-hidden rounded align-middle bg-white shadow-lg " chatwindow="true" >
 		
 		<div id="chat__header_bg" class="bg-grey-darkest">
-			{% include 'chunks/chat-header.html' %}
-			{% include 'chunks/chat-header-sec-1.html' %}
-			{% include 'chunks/chat-header-sec-2.html' %}			
+
+			{% include 'chunks/chat-default-header.html' %}
+			{% include 'chunks/chat-sections/chat-header-sec-1.html' %}
+			{% include 'chunks/chat-sections/chat-header-sec-2.html' %}			
 		</div>
-		{% include 'chunks/chat-content-1.html' %}
-		{% include 'chunks/chat-content-2.html' %}
+		{% include 'chunks/chat-content/chat-content-row.html' %}
+		{% include 'chunks/chat-content/chat-content-grid.html' %}
 
-		{% include 'chunks/chat-section-1.html' %}
-		{% include 'chunks/chat-section-2.html' %}
+		{% include 'chunks/chat-sections/chat-section-1.html' %}
+		{% include 'chunks/chat-sections/chat-section-2.html' %}
 
-		{% include 'chunks/chat-footer.html' %}
+		{% include 'chunks/chat-button-footer.html' %}
 							
 	</div>
 </div>
