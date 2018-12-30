@@ -9,24 +9,24 @@
 	<input type="checkbox" id="show-chat-section-2" class="input__hidden">
 
 
-	{% include 'chunks/chat-show-button.html' %}
+	{% include "chunks/chat-show-button.html" %}
 
 
 	<div id="chat-main" class="text-sm chat__main overflow-hidden rounded align-middle bg-white shadow-lg " chatwindow="true" >
 		
 		<div id="chat__header_bg" class="bg-grey-darkest">
 
-			{% include 'chunks/chat-default-header.html' %}
-			{% include 'chunks/chat-sections/chat-header-sec-1.html' %}
-			{% include 'chunks/chat-sections/chat-header-sec-2.html' %}			
+			{% include "chunks/chat-default-header.html" %}
+			{% include "chunks/chat-sections/chat-header-sec-1.html" %}
+			{% include "chunks/chat-sections/chat-header-sec-2.html" %}			
 		</div>
-		{% include 'chunks/chat-content/chat-content-row.html' %}
-		{% include 'chunks/chat-content/chat-content-grid.html' %}
+		{% include "chunks/chat-content/chat-content-row.html" %}
+		{% include "chunks/chat-content/chat-content-grid.html" %}
 
-		{% include 'chunks/chat-sections/chat-section-1.html' %}
-		{% include 'chunks/chat-sections/chat-section-2.html' %}
+		{% include "chunks/chat-sections/chat-section-1.html" %}
+		{% include "chunks/chat-sections/chat-section-2.html" %}
 
-		{% include 'chunks/chat-button-footer.html' %}
+		{% include "chunks/chat-button-footer.html" %}
 							
 	</div>
 </div>
