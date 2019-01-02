@@ -1,13 +1,17 @@
-{% extends "^/layouts/base.html" %}
+<!-- Example of the implementention of this template 
+it needs to be added-->
+{# extends "^/layouts/base.html" #}
   
 {% block style %}
   {{ super() }}  
+  <!-- headers in the style block  -->
   {% include "headers/chat.html" %}
 
 {% endblock style %}
 
 {% block content %}
   {{ super() }}
+  <!-- template in the content block -->
   {% include "templates/chat.html" %}
 
 {% endblock content %}
