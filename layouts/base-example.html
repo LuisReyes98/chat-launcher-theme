@@ -1,17 +1,18 @@
-<!-- Example of the implementention of this template 
-it needs to be added-->
+<!-- Example of the implementention of this 
+  template in the base.html and the elements
+  that need to be added-->
 {# extends "^/layouts/base.html" #}
   
 {% block style %}
   {{ super() }}  
-  <!-- headers in the style block  -->
+  <!-- headers in the style block in base.html -->
   {% include "headers/chat.html" %}
 
 {% endblock style %}
 
 {% block content %}
   {{ super() }}
-  <!-- template in the content block -->
+  <!-- template can be added anywhere in the html body -->
   {% include "templates/chat.html" %}
 
 {% endblock content %}
