@@ -1,20 +1,20 @@
 <div>	
 	<!-- Each input for a transition -->
-	<input type="checkbox" id="show-hide-chat" class="input__hidden">
+	<input hidden_input type="checkbox" id="show-hide-chat" >
 
-	<input type="checkbox" id="show-chat-content" class="input__hidden">
+	<input hidden_input type="checkbox" id="show-chat-content" >
 
-	<input type="checkbox" id="show-chat-section-1" class="input__hidden">
+	<input hidden_input type="checkbox" id="show-chat-section-1" >
 
-	<input type="checkbox" id="show-chat-section-2" class="input__hidden">
+	<input hidden_input type="checkbox" id="show-chat-section-2" >
 
 
 	{% include "chunks/chat-show-button.html" %}
 
 
-	<div id="chat-main" class="text-sm chat__main overflow-hidden rounded align-middle bg-white shadow-lg " chatwindow="true" >
+	<div chat_container id="chat-main" chatwindow="true" >
 		
-		<div id="chat__header_bg" class="bg-grey-darkest">
+		<div chat_header_background id="chat__header_bg" >
 
 			{% include "chunks/chat-default-header.html" %}
 			{% include "chunks/chat-sections/chat-header-sec-1.html" %}

@@ -1,0 +1,3 @@
+mdi
+mdi-message-text
+text-2xl

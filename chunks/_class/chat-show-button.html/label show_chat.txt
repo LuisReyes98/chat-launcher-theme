@@ -1,0 +1,12 @@
+chat__button
+mr-auto
+text-white
+link__main
+font-bold
+bg-blue
+py-2
+px-4
+hover:bg-blue-dark
+hover:text-gray
+shadow-lg
+text-2xl
