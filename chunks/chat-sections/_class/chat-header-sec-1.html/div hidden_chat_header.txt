@@ -1,0 +1,9 @@
+bg-grey-darkest
+text-white
+w-full
+flex
+flex-wrap
+px-3
+py-1
+container__hidden
+fadeOut

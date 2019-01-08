@@ -1,0 +1,9 @@
+text-white
+bg-grey-darkest
+text-sm
+mx-2
+my-2
+px-2
+py-2
+flex-shrink
+chat__message

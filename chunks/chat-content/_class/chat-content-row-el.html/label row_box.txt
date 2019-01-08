@@ -1,0 +1,9 @@
+chat__main__boxes
+w-full
+hover:bg-grey-light
+px-4
+py-4
+flex
+flex-row
+flex-shrink
+overflow-hidden

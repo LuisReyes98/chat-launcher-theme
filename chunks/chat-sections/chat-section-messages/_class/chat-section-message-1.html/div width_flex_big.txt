@@ -1,0 +1,3 @@
+flex
+flex-col
+w-5/6
