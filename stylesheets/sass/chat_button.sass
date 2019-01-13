@@ -1,26 +1,26 @@
-.aux__section 
-	//incase the button dissapear if you click here it will make it reapear
-	z-index: 1
-	cursor: pointer
-	position: fixed
-	right: 1.8em
-	bottom: 0.8em
-	opacity: 1
-	width: 2em
-	height: 2em
-	opacity: 0
-
 .chat__button 
-	//Button that show and dissapear
+	//Button that shows and dissapear
 	@extend .animated
 	@extend .fadeInUp
-	
+	font-size: 1.8em
 	cursor: pointer
 	position: fixed
-	right: 1em
-	bottom: 5px
+	right: 1rem
+	bottom: 1rem
+	padding: 0.5em
+	background-color: #2b3038
+
+
 	z-index: 2	
 	transition: visibility 1.5s linear
 	animation-delay: 1.2s
 	-webkit-animation-delay: 1.2s
-	@extend %rounded-to-top-right
+	box-shadow: 5px 5px 20px 1px #000
+
+	border-top-left-radius: 50%
+	border-top-right-radius: 10%
+	border-bottom-left-radius: 50%
+	border-bottom-right-radius: 50%
+	&:hover
+		background-color: #191c21
+

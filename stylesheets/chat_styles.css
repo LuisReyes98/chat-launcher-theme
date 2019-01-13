@@ -1,9 +1,3 @@
-.chat__button {
-  border-top-left-radius: 40%;
-  border-top-right-radius: 5%;
-  border-bottom-left-radius: 40%;
-  border-bottom-right-radius: 40%; }
-
 .chat__message {
   border-top-left-radius: 3px;
   border-top-right-radius: 10px;
@@ -2520,26 +2514,25 @@
     .chat__main .chat__box::-webkit-scrollbar-thumb:hover {
       background: #B8C2CC; }
 
-.aux__section {
-  z-index: 1;
-  cursor: pointer;
-  position: fixed;
-  right: 1.8em;
-  bottom: 0.8em;
-  opacity: 1;
-  width: 2em;
-  height: 2em;
-  opacity: 0; }
-
 .chat__button {
+  font-size: 1.8em;
   cursor: pointer;
   position: fixed;
-  right: 1em;
-  bottom: 5px;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.5em;
+  background-color: #2b3038;
   z-index: 2;
   transition: visibility 1.5s linear;
   animation-delay: 1.2s;
-  -webkit-animation-delay: 1.2s; }
+  -webkit-animation-delay: 1.2s;
+  box-shadow: 5px 5px 20px 1px #000;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%; }
+  .chat__button:hover {
+    background-color: #191c21; }
 
 .container__visible, #chat-content-main, #show-chat-content:checked ~ #chat-main #chat-content-2, #show-chat-section-1:checked ~ #chat-main #chat__header_bg #chat-header-sec-1, #show-chat-section-1:checked ~ #chat-main #chat-section-1, #show-chat-section-2:checked ~ #chat-main #chat__header_bg #chat-header-sec-2, #show-chat-section-2:checked ~ #chat-main #chat-section-2 {
   transition: display 0.5s;
