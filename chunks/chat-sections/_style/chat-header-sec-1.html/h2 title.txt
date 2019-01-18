@@ -1,0 +1,4 @@
+px-2
+flex-grow
+text-center
+text-2xl

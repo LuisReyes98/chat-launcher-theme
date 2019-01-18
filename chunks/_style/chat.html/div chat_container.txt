@@ -1,0 +1,7 @@
+text-sm
+chat__main
+overflow-hidden
+rounded
+align-middle
+bg-white
+shadow-lg

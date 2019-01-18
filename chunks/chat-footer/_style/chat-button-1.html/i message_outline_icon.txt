@@ -1,0 +1,2 @@
+mdi
+mdi-message-text-outline
