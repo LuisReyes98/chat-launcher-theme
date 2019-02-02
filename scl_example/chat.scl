@@ -1,0 +1,108 @@
+header_title = "My Chat"
+
+header_image = "https://avatars0.githubusercontent.com/u/43634206?s=200&v=4"
+
+sections = {
+  main = {
+    title = "Message Us Again",
+    message = "Aute veniam excepteur cillum anim ipsum aliquip amet aliqua mollit nostrud.",    
+  },
+  sec1 = {
+    title = "Join Us",
+    message = "Aute veniam excepteur cillum anim ipsum aliquip amet aliqua mollit nostrud.",
+    sender_messages = [
+      {
+        image = "https://image.flaticon.com/icons/svg/149/149071.svg",
+        name = "Lorem",
+        message = "Lorem",            
+      },
+      {
+        image = "https://image.flaticon.com/icons/svg/149/149071.svg",
+        name = "Lorem",
+        message = "Lorem Ea labore dolore consectetur labore.",            
+      },            
+      
+    ]
+    
+  },
+  sec2 = {
+    title = "Who we are",
+    message = "We are who we are",    
+    sender_messages = [
+      {
+        image = "https://image.flaticon.com/icons/svg/149/149071.svg",
+        name = "Lorem",
+        message = "Lorem Velit ea laborum qui occaecat. Magna aliquip tempor veniam sint minim laboris. Qui nostrud irure ut mollit reprehenderit consectetur commodo aliquip elit est duis. Dolor fugiat veniam sunt aute nulla consequat amet.",            
+      },
+      {
+        image = "https://image.flaticon.com/icons/svg/149/149071.svg",
+        name = "Lorem",
+        message = "Lorem Ea labore dolore consectetur labore.",            
+      },
+      {
+        image = "https://image.flaticon.com/icons/svg/149/149071.svg",
+        name = "Lorem",
+        message = "Lorem Velit ea laborum qui occaecat. Magna aliquip tempor veniam sint minim laboris. Qui nostrud irure ut mollit reprehenderit consectetur commodo aliquip elit est duis. Dolor fugiat veniam sunt aute nulla consequat amet.",            
+      },
+    ]
+  },
+
+}
+
+
+rows = [
+  { 
+    title = "Info",
+    message = "Aute veniam excepteur cillum anim ipsum aliquip amet aliqua mollit nostrud.",    
+    image_link = "https://image.flaticon.com/icons/svg/126/126100.svg",
+    alert = 1,
+    section_id = "show-chat-section-1"
+  },
+  { 
+    title = "LOREM ",
+    message = "Aute veniam excepteur cillum anim ipsum aliquip amet aliqua mollit nostrud.",    
+    image_link = "https://image.flaticon.com/icons/svg/1127/1127071.svg",
+
+  },{ 
+    title = "I AM HERE",
+    message = "Aute veniam excepteur cillum anim ipsum aliquip amet aliqua mollit nostrud.",    
+    image_link = "https://image.flaticon.com/icons/svg/138/138239.svg",
+  },{ 
+    title = "Info",
+    message = "Aute veniam excepteur cillum anim ipsum aliquip amet aliqua mollit nostrud.",    
+    image_link = "https://image.flaticon.com/icons/svg/126/126100.svg",
+  },
+]
+
+grids = [
+  [
+    { 
+      title = "Clcik me",
+      image_link = "https://image.flaticon.com/icons/svg/138/138239.svg",
+      section_id = "show-chat-section-2"
+    },
+    { 
+      title = "I am Info",
+      image_link = "https://image.flaticon.com/icons/svg/126/126100.svg",
+    },
+
+  ],
+  [
+    { 
+      title = "Hello",
+      image_link = "https://image.flaticon.com/icons/svg/1127/1127071.svg",
+    },
+    { 
+      title = "Yes its me",
+      image_link = "https://image.flaticon.com/icons/svg/126/126100.svg",
+    },
+
+  ],
+  [
+    { 
+      title = "Hello",
+      image_link = "https://image.flaticon.com/icons/svg/1127/1127071.svg",
+    }
+
+  ],
+]

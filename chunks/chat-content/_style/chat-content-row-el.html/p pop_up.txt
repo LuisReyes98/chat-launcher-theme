@@ -1,0 +1,5 @@
+text-white
+bg-red-dark	
+rounded-full
+p-1
+text-xs

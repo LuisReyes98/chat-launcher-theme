@@ -1,48 +1,18 @@
-<!-- Element 1 -->
-<label row_box for="show-chat-section-1" >
-  <!-- Element of container -->
-  <img row_image src="https://image.flaticon.com/icons/svg/189/189664.svg"  alt="">
-  <div sub_box_padding>
-    <h4 box_title >Page information</h4>
-    <p box_message >Hey there! Can I help you with anything?</p>
-  </div>
-  <div>
-    <p> Hello</p>
-  </div>
-</label>
 
-<!-- Element 2 -->
-<label row_box >
-  <!-- Element of container -->
-  
-  <img row_image src="https://image.flaticon.com/icons/svg/126/126100.svg"  alt="">
-  <div sub_box_padding>
-    <h4 box_title >Page information</h4>
-    <p box_message >Hey there! Can I help you with anything?</p>
-  </div>
-</label>
+{% for element in chat.rows  %}
+  <label row_box for="{%if element.section_id %}{{element.section_id}}{%endif%}">
+    <!-- Element of container -->
+    <img row_image src="{%if element.image_link %}{{element.image_link}}{%endif%}" alt="image">
+    <div sub_box_padding>
+      <h4 box_title>{{element.title}}</h4>
+      <p box_message>{{element.message}}</p>
+    </div>
 
+    <div>
+      {%if element.alert %}         
+        <p pop_up>{{element.alert}}</p>
+      {%endif%}
+    </div>
+  </label>
 
-
-<!-- Element 3 -->
-<label row_box >
-  <!-- Element of container -->
-
-  <img row_image src="https://image.flaticon.com/icons/svg/1127/1127071.svg"  alt="">
-  <div sub_box_padding>
-    <h4 box_title >Page information</h4>
-    <p box_message >Hey there! Can I help you with anything?</p>
-  </div>
-</label>
-
-
-<!-- Element 4 -->
-<label row_box >
-  <!-- Element of container -->
-
-  <img row_image src="https://image.flaticon.com/icons/svg/138/138239.svg"  alt="">
-  <div sub_box_padding>
-    <h4 box_title >Page information</h4>
-    <p box_message >Hey there! Can I help you with anything?</p>
-  </div>
-</label>
+{% endfor %}

@@ -21,6 +21,9 @@
   width: auto;
   height: 30px; }
 
+.no_height {
+  height: 0%; }
+
 /*!
  * animate.css -http://daneden.me/animate
  * Version - 3.7.0
@@ -2450,30 +2453,6 @@
     animation: unset !important;
     -webkit-transition: none !important;
     transition: none !important; } }
-@-webkit-keyframes doNothing {
-  from {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
-@keyframes doNothing {
-  from {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
-.doNothing {
-  -webkit-animation-name: doNothing;
-  animation-name: doNothing;
-  animation-duration: 3000s;
-  -webkit-animation-duration: 3000s; }
-
 .chat__main {
   animation-delay: 1s;
   -webkit-animation-delay: 1s;
@@ -2492,10 +2471,6 @@
   visibility: hidden; }
   .chat__main .close__button {
     font-size: 2em; }
-  .chat__main .chat__section__button {
-    background-color: #b8c2cc; }
-    .chat__main .chat__section__button:hover {
-      background-color: #f1f5f8; }
   .chat__main .chat__box {
     overflow-y: scroll;
     height: 20em;
@@ -2566,6 +2541,15 @@
   display: none;
   visibility: hidden; }
 
+#chat_footer_btn_1 {
+  background-color: #dae1e7; }
+
+#chat_footer_btn_2 {
+  background-color: #b8c2cc; }
+
+#chat_footer_btn_2:hover, #chat_footer_btn_1:hover {
+  background-color: #f1f5f8; }
+
 #show-hide-chat:checked ~ #show-chat {
   animation-delay: 0.8s;
   -webkit-animation-delay: 0.8s;
@@ -2574,5 +2558,12 @@
 #show-hide-chat:checked ~ #chat-main {
   visibility: visible;
   display: block; }
+
+#show-chat-content:checked ~ #chat-main #chat-footer #chat_footer_btn_2:hover, #show-chat-content:checked ~ #chat-main #chat-footer #chat_footer_btn_1:hover {
+  background-color: #f1f5f8; }
+#show-chat-content:checked ~ #chat-main #chat-footer #chat_footer_btn_1 {
+  background-color: #b8c2cc; }
+#show-chat-content:checked ~ #chat-main #chat-footer #chat_footer_btn_2 {
+  background-color: #dae1e7; }
 
 /*# sourceMappingURL=chat_styles.css.map */

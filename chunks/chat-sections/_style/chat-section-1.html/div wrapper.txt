@@ -1,3 +1,4 @@
 flex
 flex-wrap
 w-full
+items-start

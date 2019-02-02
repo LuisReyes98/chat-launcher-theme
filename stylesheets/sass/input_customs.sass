@@ -10,6 +10,16 @@
 	display: none
 	visibility: hidden
 
+#chat_footer_btn_1
+	background-color: #dae1e7
+
+#chat_footer_btn_2	
+	background-color: #b8c2cc
+
+#chat_footer_btn_2,	#chat_footer_btn_1
+	&:hover
+		background-color: #f1f5f8
+
 #show-hide-chat
 	&:checked 
 		~ #show-chat
@@ -32,6 +42,16 @@
 
 			#chat-content-main	
 				@extend %element-hidden
+
+
+			#chat-footer
+				#chat_footer_btn_2,	#chat_footer_btn_1
+					&:hover
+						background-color: #f1f5f8
+				#chat_footer_btn_1
+					background-color: #b8c2cc					
+				#chat_footer_btn_2
+					background-color: #dae1e7
 
 			#chat-content-2
 				@extend %element-visible

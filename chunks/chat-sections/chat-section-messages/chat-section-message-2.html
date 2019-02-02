@@ -1,15 +1,15 @@
-<div width_sm>
-  <!-- User image -->
-  <img avatar_img src="https://image.flaticon.com/icons/svg/149/149071.svg" alt="user">
-</div>
-<div width_flex_big>
-  <p messager_name>
-    Foundpatterns Second template
-  </p>
-  <p message_bubble>
-    We would love to talk to you are our discord
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores in fugiat natus quod dicta deserunt qui
-    reprehenderit architecto tempora amet. Quibusdam soluta dolores, necessitatibus ea. Id dolore, assumenda possimus
-    vel.
-  </p>
-</div>
+{% for element in chat.sections.sec2.sender_messages %}
+  <div width_sm>
+    <!-- User image -->
+    <img avatar_img src="{{element.image}}" alt="user">
+  </div>
+  <div width_flex_big>
+    <p messager_name>
+      {{element.name}}
+    </p>
+    <p message_bubble>
+      {{element.message}}
+    </p>
+  </div>
+
+{% endfor %}
