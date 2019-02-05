@@ -1,4 +1,7 @@
-<img image_sm src="{{ chat.header_image }}" alt="company_logo">
+<img image_sm src="{% if chat.header_image%}{{ chat.header_image }}{% endif %}" alt="company_logo">
 <h2 title>
-  {{ chat.header_title }}
+  {% if chat.header_title%}
+    {{ chat.header_title }}
+  {% endif %}
+
 </h2>

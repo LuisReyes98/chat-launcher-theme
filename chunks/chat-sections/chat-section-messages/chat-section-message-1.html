@@ -1,20 +1,23 @@
 
-{% for element in chat.sections.sec1.sender_messages %}
-  <div full_width>
-    <div width_sm>
-      <!-- User image -->
-      <img avatar_img src="{{element.image}}" alt="user">
+{%if chat.sections.sec1.sender_messages%}
+  {% for element in chat.sections.sec1.sender_messages %}
+    <div full_width>
+      <div width_sm>
+        <!-- User image -->
+        <img avatar_img src="{{element.image}}" alt="user">
+      </div>
+      <div width_flex_big>
+        <p messager_name>
+          {{element.name}}
+        </p>
+        <p message_bubble>
+          {{element.message}}
+        </p>
+      </div>
+
+
     </div>
-    <div width_flex_big>
-      <p messager_name>
-        {{element.name}}
-      </p>
-      <p message_bubble>
-        {{element.message}}
-      </p>
-    </div>
 
+  {% endfor %}
 
-  </div>
-
-{% endfor %}
+{%endif%}

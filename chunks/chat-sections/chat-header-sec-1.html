@@ -3,19 +3,24 @@
 		<label for="show-chat-section-1">
 			<i left_arrow_icon ></i>
 		</label>
-		<label close_button id="close-chat" for="show-hide-chat" >
-			<i close_icon tabindex="1"></i>
-		</label>
+		{% include "chunks/chat/close_label.html" %}
+
 	</div>
 	<div title_container>
 		
 		{% include "chunks/chat/header.html" %}
 
 		<h3 subtitle>
-			{{chat.sections.sec1.title}}
+			{% if chat.sections.sec1.title%}
+				{{chat.sections.sec1.title}}	
+			
+			{% endif %}
 		</h3>
 		<p message>
-			{{chat.sections.sec1.message}}
+			{% if chat.sections.sec1.message%}
+				{{chat.sections.sec1.message}}
+			
+			{% endif %}
 		</p>
 	</div>
 									

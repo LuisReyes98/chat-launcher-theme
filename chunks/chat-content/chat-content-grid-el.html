@@ -1,18 +1,20 @@
 <!-- Row -->
-{% for row in chat.grids%}
-  <div container_row>
-    {% for element in row %}
-      <!-- Elemet of the row -->
-      <label row_element for="{%if element.section_id %}{{element.section_id}}{%endif%}">
-        <div fill_width>
-          <img container_img src="{%if element.image_link %}{{element.image_link}}{%endif%}" alt="image">
-        </div>
-        <p container_title>
-          {{element.title}}
-        </p>
-      </label>
+{% if chat.grids%}
+  {% for row in chat.grids%}
+    <div container_row>
+      {% for element in row %}
+        <!-- Elemet of the row -->
+        <label row_element for="{%if element.section_id %}{{element.section_id}}{%endif%}">
+          <div fill_width>
+            <img container_img src="{%if element.image_link %}{{element.image_link}}{%endif%}" alt="image">
+          </div>
+          <p container_title>
+            {{element.title}}
+          </p>
+        </label>
 
 
-    {% endfor%}
-  </div>
-{%endfor%}
+      {% endfor%}
+    </div>
+  {%endfor%}
+{% endif %}

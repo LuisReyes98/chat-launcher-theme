@@ -1,18 +1,21 @@
 <div chat_header id="chat-header">
-	<div icon_container>
-		<i chat_icon></i>
-		<label close_button id="close-chat"  for="show-hide-chat" >
-			<i close_icon tabindex="1" ></i>			
-		</label>
-	</div>
+	
+	{% include "chunks/chat/close_chat.html" %}
+
 	<div title_container>
 		{% include "chunks/chat/header.html" %}
 		
-		<h3 subtitle >
-			{{chat.sections.main.title}}
+		<h3 subtitle>
+			{% if chat.sections.main.title%}
+				{{chat.sections.main.title}}	
+			
+			{% endif %}
 		</h3>
-		<p message >
-			{{chat.sections.main.message}}
+		<p message>
+			{% if chat.sections.main.message%}
+				{{chat.sections.main.message}}
+			
+			{% endif %}
 		</p>
 	</div>								
 </div>

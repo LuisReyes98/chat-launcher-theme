@@ -1,18 +1,19 @@
+{% if chat.rows%}
+  {% for element in chat.rows  %}
+    <label row_box for="{%if element.section_id %}{{element.section_id}}{%endif%}">
+      <!-- Element of container -->
+      <img row_image src="{%if element.image_link %}{{element.image_link}}{%endif%}" alt="image">
+      <div sub_box_padding>
+        <h4 box_title>{{element.title}}</h4>
+        <p box_message>{{element.message}}</p>
+      </div>
 
-{% for element in chat.rows  %}
-  <label row_box for="{%if element.section_id %}{{element.section_id}}{%endif%}">
-    <!-- Element of container -->
-    <img row_image src="{%if element.image_link %}{{element.image_link}}{%endif%}" alt="image">
-    <div sub_box_padding>
-      <h4 box_title>{{element.title}}</h4>
-      <p box_message>{{element.message}}</p>
-    </div>
+      <div>
+        {%if element.alert %}         
+          <p pop_up>{{element.alert}}</p>
+        {%endif%}
+      </div>
+    </label>
 
-    <div>
-      {%if element.alert %}         
-        <p pop_up>{{element.alert}}</p>
-      {%endif%}
-    </div>
-  </label>
-
-{% endfor %}
+  {% endfor %}
+{% endif %}
